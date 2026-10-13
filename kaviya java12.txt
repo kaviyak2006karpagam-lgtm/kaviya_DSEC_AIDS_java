@@ -1,0 +1,41 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int balance = 5000;
+        System.out.println("initialBalance");
+        System.out.println(balance);
+        balance += 1000;
+        System.out.println("deposit");
+        System.out.println(balance);
+        balance -= 600;
+        System.out.println("withdraw");
+        System.out.println(balance);
+        System.out.println("total");
+        System.out.println(balance);
+         }}                                                                                                                                                                                                                        
+2.class Q5 {
+    public static void main(String[] args) {
+        String name = "Kaviya";
+        int age = 20;
+        char grade = 'A';
+        boolean isPlaced = true;
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Grade: " + grade);
+        System.out.println("Placed: " + isPlaced);
+    }
+}
+3.class Q5 {
+    public static void main(String[] args) {
+        String name = "Kaviya";
+        int age = 20;
+        char grade = 'A';
+        boolean isPlaced = true;
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Grade: " + grade);
+        System.out.println("Placed: " + isPlaced);
+    }
+}

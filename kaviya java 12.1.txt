@@ -1,0 +1,66 @@
+4.class main{
+    public static void main(String[] args) {
+        String productName = "Laptop";
+        int productId = 101;
+        double price = 55000.50;
+        boolean available = true;
+
+        System.out.println("----- Product Card -----");
+        System.out.println("Name: " + productName);
+        System.out.println("ID: " + productId);
+        System.out.println("Price: " + price);
+        System.out.println("Available: " + available);
+    }
+}
+5.class Q6 {
+    public static void main(String[] args) {
+        int population = 8000000;
+        double price = 1499.95;
+        char bloodGroup = 'A';
+        boolean isVerified = true;
+        String empName = "Kavin";
+
+        System.out.println(population);
+        System.out.println(price);
+        System.out.println(bloodGroup);
+        System.out.println(isVerified);
+        System.out.println(empName);
+    }
+}
+6.class Q5 {
+    public static void main(String[] args) {
+        String name = "Kaviya";
+        int age = 20;
+        char grade = 'A';
+        boolean isPlaced = true;
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Grade: " + grade);
+        System.out.println("Placed: " + isPlaced);
+    }
+}  
+
+7.class Q5 {
+    public static void main(String[] args) {
+        String name = "Kaviya";
+        int age = 20;
+        char grade = 'A';
+        boolean isPlaced = true;
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Grade: " + grade);
+        System.out.println("Placed: " + isPlaced);
+    }
+}
+8.class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        int large = (a > b) ? a : b;
+        System.out.println("Largest Number: " + large);
+    }
+}
+
+
