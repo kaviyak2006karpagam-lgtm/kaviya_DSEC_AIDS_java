@@ -1,0 +1,66 @@
+ 1.class Main {
+    public static void main(String[] args) {
+        int a=10;
+        int b=20;
+        int large=(a>b)?a:b;
+        System.out.println("largest number:" +large);
+    }
+}
+2.class Main {
+    public static void main(String[] args)  {
+        int a =10;
+        int b=20;
+int result=(a>b)?a:b;
+System.out.println(result);
+    }
+ }
+3.class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        String result = (a > 0) ? "Positive" : 
+         (a < 0) ? "Negative" : "Zero";
+        System.out.println(result);
+    }
+}
+4.class Main {
+    public static void main(String[] args) {
+        int a = 20;
+        int eligible=(a>=18)?a:0;
+        System.out.println("eligible for vote: " + eligible);
+    }
+}
+6.class Main {
+    public static void main(String[] args) {
+        int a = 16;
+        String result = (a % 5 == 0) ? "Divisible" : "Not Divisible";
+        System.out.println("Divisibility check: " + result);
+    }
+}
+6.class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        int c = 30;
+
+        int largest = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+
+        System.out.println("Largest number: " + largest);
+    }
+}
+
+7.class Main {
+    public static void main(String[] args) {
+        int a = 12344;
+        int last = a % 3;
+        String result = (last % 2== 0) ? "Even" : "Odd";
+        System.out.println("Last digit is: " + result);
+    }
+}
+8.class Main {
+    public static void main(String[] args) {
+        int mark = 35;
+        String result = (mark >= 35) ? "Pass" : "Fail";
+        System.out.println("Student Result: " + result);
+    }
+}
+
