@@ -1,0 +1,157 @@
+1.public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int OverdueDate = sc.nextInt();
+
+        if (OverdueDate > 0) {
+            System.out.println("Sorry for late delivery");
+        } else {
+            System.out.println("Delivered");
+        }
+
+        sc.close(); }
+}
+2.import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String userType = sc.nextLine();
+
+        if (userType.equals("Student")) {
+System.out.println("Subscription Charge 50 Rs");
+        } 
+else
+{
+System.out.println("Subscription for others is 100 Rs");
+        }
+
+sc.close();
+    }
+}
+3.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+        int data = sc.nextInt();
+      if(data<0){
+        System.out.println("Invald Input");
+      } else if(data <= 1) {
+        System.out.println("Light Usage");
+      } else if(data<= 3){
+        System.out. println("moderate");
+      }else{
+        System.out.println("heavy usage");
+
+      }
+         sc.close();
+    }
+}
+4.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      double waterUsage = sc.nextDouble();
+      
+      if(waterUsage < 0){
+        System.out.println("Invalid Input");
+      } else if(waterUsage <= 50){
+        System.out.println("Low consumption");
+      } else if(waterUsage <= 150){
+        System.out.println("Moderate consumption");
+      } else {
+        System.out.println("High consumption");
+      }
+    }
+}
+5.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      boolean hasregister = sc.nextBoolean();
+      boolean haslogin = sc.nextBoolean();
+      
+      if(hasregister){
+        if(haslogin){
+          System.out.println("Access Granted");
+        } else {
+          System.out.println("Access Failed");
+        }
+      } else {
+        System.out.println("Complete Registration");
+      }
+    }
+}
+6.import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int balance = sc.nextInt();
+
+        if (balance < 1000) {
+            System.out.println("its low balance");
+        }else if 
+            (balance>1000){
+            System.out.println("its high balance");
+        }    
+        sc.close();
+    }
+}
+7.import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int score = sc.nextInt();
+
+        if (score % 2 != 0) {
+            System.out.println("Bonus Unlocked");
+        }
+
+        sc.close();
+    }
+}
+8.import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int temperature = sc.nextInt();
+
+        if (temperature >= 30) {
+            System.out.println("Warm Day");
+        } else {
+            System.out.println("Cool Day");
+        }
+
+        sc.close();
+    }
+}
+9.import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+        int lastDigit=num % 10;
+
+        if (lastDigit == 7) {
+            System.out.println("Lucky Ending");
+        } else {
+            System.out.println("Not a Lucky Ending");
+        }
+
+        sc.close();
+    }
+}
+      
