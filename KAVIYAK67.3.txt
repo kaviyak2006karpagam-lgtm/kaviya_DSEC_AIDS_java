@@ -1,0 +1,93 @@
+1.import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int sum= 0;
+
+        while(n > 0){
+            int digit=n % 10;
+            sum=sum+digit;
+            n = n / 10;
+            
+        }
+        
+        System.out.println("system of Digits="+ sum);
+    }
+}
+2.import java.util.Scanner;
+public class Main{
+     public static void main(String[] args){
+        int count=0;
+            int number=56289;
+        while(number>0){
+            count++;
+            number=number/10;
+        }
+    System.out.println("number of digits;"+count);    
+    }
+}
+3.import java.util.Scanner;
+public class Main{
+     public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+         int a=sc.nextInt();
+          int b=sc.nextInt();
+         int gcd=1;
+         int limit=Math.min(a,b);
+         for(int i=1;i<=limit;i++){
+        if(a%i==0&&b%i==0){
+            gcd=i;
+        }
+         }
+    System.out.println("GCD"+gcd);    
+    }
+4.import java.util.Scanner;
+public class Main{
+     public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+         int n=sc.nextInt();
+          int reverse=0;
+        while(n>0){
+            int digit=n % 10;
+            reverse = reverse * 10 + digit;
+            n = n / 10;
+        }
+        
+         System.out.println("Reverse = "+reverse);    
+    }
+}
+}
+3.import java.util.Scanner;
+class Main{
+     public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int original=n;
+        int reverse=0;
+        while(n>0){
+          int digit=n % 10;
+          reverse = reverse * 10 + digit;
+          n = n / 10;
+        }
+        if(original==reverse){
+               System.out.print("its palindrome");
+        }else{
+               System.out.print("not a palindrome");
+        }
+    }
+}
+4.import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+        int n =sc.nextInt();
+        long fact=1;
+
+        for(int i = 1; i <=n; i++){
+            fact=fact*i;
+        }
+        System.out.println("factorial="+fact);
+    }
+}
