@@ -1,0 +1,99 @@
+import java.util.Scanner;
+
+public class RemoveVowels {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a sentence:");
+        String str = sc.nextLine();
+
+        StringBuilder sb = new StringBuilder(str);
+
+        for (int i = 0; i < sb.length(); i++) {
+            char ch = Character.toLowerCase(sb.charAt(i));
+
+            if (ch == 'a' || ch == 'e' || ch == 'i' ||
+                ch == 'o' || ch == 'u') {
+                sb.deleteCharAt(i);
+                i--;
+            }
+        }
+
+        System.out.println("Sentence without vowels: " + sb);
+
+        sc.close();
+    }
+}
+2.import java.util.Scanner;
+
+public class SwapFirstLast {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a sentence:");
+        String str = sc.nextLine();
+
+        StringBuilder sb = new StringBuilder(str);
+
+        if (sb.length() > 1) {
+            char first = sb.charAt(0);
+            char last = sb.charAt(sb.length() - 1);
+
+            sb.setCharAt(0, last);
+            sb.setCharAt(sb.length() - 1, first);
+        }
+
+        System.out.println("After swapping: " + sb);
+
+        sc.close();
+    }
+}
+3.import java.util.Scanner;
+
+public class MaskPhoneNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter phone number:");
+        String phone = sc.nextLine();
+
+        StringBuilder sb = new StringBuilder(phone);
+
+        for (int i = 0; i < sb.length() - 4; i++) {
+            if (Character.isDigit(sb.charAt(i))) {
+                sb.setCharAt(i, '*');
+            }
+        }
+
+        System.out.println("Masked Phone Number: " + sb);
+
+        sc.close();
+    }
+}
+4.import java.util.Scanner;
+
+public class Abbreviation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your full name:");
+        String str = sc.nextLine();
+
+        StringBuilder sb = new StringBuilder();
+
+        String[] words = str.trim().split("\\s+");
+
+        for (int i = 0; i < words.length; i++) {
+            if (i == words.length - 1) {
+                sb.append(words[i]);
+            } else {
+                sb.append(Character.toUpperCase(words[i].charAt(0)));
+                sb.append(".");
+            }
+        }
+
+        System.out.println("Abbreviation: " + sb);
+
+        sc.close();
+    }
+}
